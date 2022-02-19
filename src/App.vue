@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+ <Login msg="Welcome to HosLog"/> -->
+ <!-- <router-link to="/dashboard">Dashboard</router-link> -->
+ <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import M from 'materialize-css'
+// import Login from './views/Login'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  mounted () {
+    M.AutoInit()
+  },
+  // components: {
+  //   Login
+  // }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
